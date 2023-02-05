@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hcl-react/static/css/main.e0d19d54.css",
+    "main.js": "/hcl-react/static/js/main.2c6f0b18.js",
+    "static/js/787.0624c8db.chunk.js": "/hcl-react/static/js/787.0624c8db.chunk.js",
+    "static/media/Hua_Cat_Luong-Mobile_Engineer.pdf": "/hcl-react/static/media/Hua_Cat_Luong-Mobile_Engineer.1312420242136cbefa73.pdf",
+    "index.html": "/hcl-react/index.html",
+    "main.e0d19d54.css.map": "/hcl-react/static/css/main.e0d19d54.css.map",
+    "main.2c6f0b18.js.map": "/hcl-react/static/js/main.2c6f0b18.js.map",
+    "787.0624c8db.chunk.js.map": "/hcl-react/static/js/787.0624c8db.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0d19d54.css",
+    "static/js/main.2c6f0b18.js"
+  ]
+}
