@@ -1,0 +1,13 @@
+# Settings in the [build] context are global and are applied to
+# all contexts unless otherwise overridden by more specific contexts.
+
+# RESOURCES: https://docs.netlify.com/configure-builds/file-based-configuration/#sample-netlify-toml-file
+[build]
+
+[[redirects]]
+from = "/helloworld"
+to = "/"
+
+#[[redirects]]
+#from = "/resume"
+#to = "/"

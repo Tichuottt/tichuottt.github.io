@@ -1,0 +1,82 @@
+.link {
+    display: flex;
+    border-style: dotted;
+    border-color: #d7d3d3;
+    border-width: 0.1px;
+    border-radius: 12px;
+    width: 25vw;
+    margin: auto auto 1rem;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #e0e9f5;
+    background-color: rgba(2, 2, 2, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.link :hover {
+    transition: all 0.4s ease-in;
+    color: #81b1ef;
+    border-bottom: 1px solid #81b1ef;
+}
+
+.link h3 {
+    font-size: clamp(.8rem, 1.3vw, 1.5rem);
+    margin: auto;
+}
+
+.link img {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    right: 1rem;
+    align-self: center;
+    /*left: 30px;*/
+    /*margin: 0 0 0 0.5rem;*/
+    /*top: 20%;*/
+    /*background-color: transparent;*/
+}
+
+.link img:hover {
+    text-decoration: none;
+}
+
+/*SIZE FOR SMALL DEVICES*/
+@media (max-width: 580px) {
+    .link {
+        width: 45vw;
+    }
+}
+
+/*GRADIENT PICKER FOR CSS: https://cssgradient.io*/
+
+.facebook {
+    /*background-color: rgba(59, 98, 176, 0.5);*/
+    background: linear-gradient(145deg, rgba(37, 58, 136, 0.5) 12%, rgba(58, 85, 159, 0.5) 93%);
+}
+
+.instagram {
+    background: linear-gradient(122deg, rgba(23, 23, 23, 1) 0%, rgba(255, 255, 255, 0.5) 0%, rgba(149, 57, 157, 0.6) 39%, rgba(237, 182, 156, 0.5) 81%, rgba(238, 239, 239, 0.5) 100%);
+}
+
+.linkedin {
+    background: linear-gradient(243deg, rgba(2, 94, 144, 0.6) 28%, rgba(0, 120, 184, 0.5) 92%);
+}
+
+.github {
+    background: linear-gradient(297deg, rgba(0, 0, 0, 0.3) 34%, rgba(119, 117, 117, 0.6) 100%);
+}
+
+.whatsapp {
+    background: linear-gradient(231deg, rgba(59, 212, 89, 0.5340511204481793) 0%, rgba(18, 143, 43, 0.5564600840336135) 98%);
+}
+
+.zalo {
+    background: linear-gradient(172deg, rgba(1, 133, 254, 0.6) 0%, rgba(187, 207, 224, 0.4) 99%);
+}
+
+.snapchat {
+    background: linear-gradient(82deg, rgba(167, 165, 71, 0.6) 0%, rgba(218, 216, 4, 0.6) 99%);
+}
