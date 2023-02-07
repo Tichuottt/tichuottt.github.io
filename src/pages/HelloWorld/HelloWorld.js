@@ -28,7 +28,7 @@ const HelloWorld = () => {
     const handler = (event) => {
         const {key} = event
         keyPressed.current += key
-        if (keyPressed.current.includes('xuanhuong')) {
+        if (keyPressed.current.includes('emnguoiyeu')) {
             window.open('https://www.instagram.com/huong.pham56/', '_blank')
             keyPressed.current = ''
         }
