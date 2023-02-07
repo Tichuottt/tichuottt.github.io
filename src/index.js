@@ -2,20 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-// import {BrowserRouter} from "react-router-dom";
-import { HashRouter as Router } from "react-router-dom";
+import {BrowserRouter,HashRouter} from "react-router-dom";
 import App from './App';
 import {AuthContextProvider} from "./store/auth-context";
 
-
+//DOCS: https://blog.logrocket.com/deploying-react-apps-github-pages/
+//DOCS: https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Router>
+        <HashRouter>
             <AuthContextProvider>
                 <App/>
             </AuthContextProvider>
-        </Router>
+        </HashRouter>
     </React.StrictMode>
 );
 
