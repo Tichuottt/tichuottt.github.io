@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from "react";
+import React, {useCallback, useRef, useState} from "react";
 import {Route} from "react-router-dom";
 import SocialNetworkList from "../../components/NetworkList/SocialNetworkList";
 import WorkNetworkList from "../../components/NetworkList/WorkNetworkList";
@@ -11,7 +11,7 @@ import useEventListener from '@use-it/event-listener'
 const HelloWorld = () => {
     const [isShowProfile, setIsShowProfile] = useState(true)
     const COMMAND_KEYS = 'huacatluong'
-    let keyPressed = ''
+    let keyPressed = useRef('')
 
     const particlesInit = useCallback(async engine => {
         console.log('engine', engine);
@@ -27,10 +27,12 @@ const HelloWorld = () => {
 
     const handler = (event) => {
         const {key} = event
-        keyPressed += key
-        if (keyPressed.slice(-COMMAND_KEYS.length) === COMMAND_KEYS) {
-            setIsShowProfile(false)
+        keyPressed.current += key
+        if (keyPressed.current.includes('xuanhuong')) {
+            window.open('https://www.instagram.com/huong.pham56/', '_blank')
+            keyPressed.current = ''
         }
+        console.log(keyPressed.current)
     }
 
     useEventListener('keydown', handler);

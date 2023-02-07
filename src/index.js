@@ -8,6 +8,8 @@ import {AuthContextProvider} from "./store/auth-context";
 
 //DOCS: https://blog.logrocket.com/deploying-react-apps-github-pages/
 //DOCS: https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson
+//DOCS: https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
