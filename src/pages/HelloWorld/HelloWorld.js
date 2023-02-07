@@ -10,7 +10,6 @@ import useEventListener from '@use-it/event-listener'
 
 const HelloWorld = () => {
     const [isShowProfile, setIsShowProfile] = useState(true)
-    const COMMAND_KEYS = 'huacatluong'
     let keyPressed = useRef('')
 
     const particlesInit = useCallback(async engine => {
