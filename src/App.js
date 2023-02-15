@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import HelloWorld from "./pages/HelloWorld/HelloWorld";
 import Redirect from "react-router-dom/es/Redirect";
 import Resume from "./pages/Resume/Resume";
+import Valentine from "./pages/Valentine/Valentine";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
                     <Route path={'/'} exact><Redirect to={'/helloworld'}/></Route>
                     <Route path={'/helloworld'}><HelloWorld/></Route>
                     <Route path={'/resume'}><Resume/></Route>
+                    <Route path={'/valentine'}><Valentine/></Route>
 
                     {/*Catch all when redirecting to a 404 Not Found page*/}
                     <Route><HelloWorld/></Route>

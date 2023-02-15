@@ -30,6 +30,9 @@ const HelloWorld = () => {
         if (keyPressed.current.includes('emnguoiyeu')) {
             window.open('https://www.instagram.com/huong.pham56/', '_blank')
             keyPressed.current = ''
+        }else if(keyPressed.current.includes('valentine')){
+            window.open('https://i.imgur.com/uXLoEAc.jpg', '_blank')
+            keyPressed.current = ''
         }
         console.log(keyPressed.current)
     }
