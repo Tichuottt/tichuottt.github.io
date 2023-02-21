@@ -1,0 +1,101 @@
+{
+  "fullScreen": {
+    "enable": true,
+    "zIndex": -1
+  },
+  "name": "Background Mask",
+  "particles": {
+    "number": {
+      "value": 23,
+      "density": {
+        "enable": true
+      }
+    },
+    "color": {
+      "value": "#fff"
+    },
+    "shape": {
+      "type": [
+        "char",
+        "image"
+      ],
+      "character": {
+        "value": "😘",
+        "font": "Verdana",
+        "style": "",
+        "weight": ""
+      },
+      "image": {
+        "src": "https://i.imgur.com/99TrwWo.png",
+        "width": 103,
+        "height": 222,
+        "replaceColor": false
+      }
+    },
+    "opacity": {
+      "value": 1
+    },
+    "size": {
+      "value": {
+        "min": 20,
+        "max": 40
+      }
+    },
+    "links": {
+      "enable": true,
+      "distance": 230,
+      "color": "#ac0e77",
+      "opacity": 1,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1.5,
+      "direction": "none",
+      "random": false,
+      "straight": false
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onHover": {
+        "enable": true,
+        "mode": [
+          "bubble"
+        ]
+      },
+      "onClick": {
+        "enable": true,
+        "mode": "push"
+      }
+    },
+    "modes": {
+      "bubble": {
+        "distance": 600,
+        "size": 123,
+        "duration": 2,
+        "opacity": 0.5
+      },
+      "push": {
+        "quantity": 2
+      }
+    }
+  },
+  "backgroundMask": {
+    "enable": false,
+    "cover": {
+      "value": {
+        "r": 221,
+        "g": 180,
+        "b": 234
+      }
+    }
+  },
+  "background": {
+    "color": "#000",
+    "image": "url('https://i.imgur.com/aJlnpI5.jpg')",
+    "position": "center",
+    "repeat": "repeat",
+    "size": "cover"
+  }
+}
