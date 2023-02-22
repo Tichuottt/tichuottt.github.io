@@ -16,11 +16,12 @@
     },
     "shape": {
       "type": [
-        "char",
-        "image"
+        "image",
+        "character",
+        "char"
       ],
       "character": {
-        "value": "😘",
+        "value": ["😘","Ahihi"],
         "font": "Verdana",
         "style": "",
         "weight": ""

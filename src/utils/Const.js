@@ -52,3 +52,6 @@ export const WORK_URL = [
         "icon": ""
     },
 ]
+
+export const FIREBASE_URL = "https://react-http-89f31-default-rtdb.asia-southeast1.firebasedatabase.app/"
+
