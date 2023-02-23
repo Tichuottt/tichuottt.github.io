@@ -1,5 +1,4 @@
-import React, {useCallback, useRef, useState} from "react";
-import {Route} from "react-router-dom";
+import React, {useCallback, useRef} from "react";
 import SocialNetworkList from "../../components/NetworkList/SocialNetworkList";
 import WorkNetworkList from "../../components/NetworkList/WorkNetworkList";
 import particle from '../../assets/particles-style/among-us.json'
@@ -9,7 +8,6 @@ import classes from './HelloWorld.module.css'
 import useEventListener from '@use-it/event-listener'
 
 const HelloWorld = () => {
-    const [isShowProfile, setIsShowProfile] = useState(true)
     let keyPressed = useRef('')
 
     const particlesInit = useCallback(async engine => {
@@ -42,15 +40,8 @@ const HelloWorld = () => {
 
     return (
         <div className={classes.helloworld}>
-            <Route path={'/helloworld/new-user'}>
-                <p>Welcome to Hua Cat Luong</p>
-            </Route>
-            {isShowProfile ?
-                <>
-                    <SocialNetworkList/>
-                    <WorkNetworkList/>
-                </> : null
-            }
+            <SocialNetworkList/>
+            <WorkNetworkList/>
             <Particles
                 id="tsparticles"
                 init={particlesInit}

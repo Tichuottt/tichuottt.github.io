@@ -1,7 +1,6 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom'
+import {Navigate, Route, Routes} from 'react-router-dom'
 import HelloWorld from "./pages/HelloWorld/HelloWorld";
-import Redirect from "react-router-dom/es/Redirect";
 import Resume from "./pages/Resume/Resume";
 import Birthday from "./pages/Birthday/Birthday";
 
@@ -17,26 +16,19 @@ function App() {
     * https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writing-manually/44467274#44467274
     * */
 
+
     return (
-        <div>
-            {/*<MainHeader/>*/}
-            <main>
-
-                <Switch>
-                    <Route path={'/'} exact><Redirect to={'/helloworld'}/></Route>
-                    <Route path={'/helloworld'}><HelloWorld/></Route>
-                    <Route path={'/resume'}><Resume/></Route>
-                    <Route path={'/bd'}><Birthday/></Route>
-
-                    {/*Catch all when redirecting to a 404 Not Found page*/}
-                    <Route><HelloWorld/></Route>
-
-                    {/*<Route path={'/products'} exact><Products/></Route>*/}
-                    {/*<Route path={'/products/:productId'}><ProductDetails/></Route>*/}
-                </Switch>
-
-            </main>
-        </div>
+        <main>
+            <Routes>
+                <Route
+                    path="*"
+                    element={<Navigate to="/" replace/>}
+                />
+                <Route exact path='/' element={<HelloWorld/>}/>
+                <Route path="/resume" element={<Resume/>}/>
+                <Route path="/bd" element={<Birthday/>}/>
+            </Routes>
+        </main>
     );
 }
 
