@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter,HashRouter} from "react-router-dom";
 import App from './App';
 import {AuthContextProvider} from "./store/auth-context";
+import {BrowserRouter} from "react-router-dom"; //Using HashRouter instead of BrowserRouter when use GitHub page because gh-page doesn't support SPA and redirect to index.html
 
 //DOCS: https://blog.logrocket.com/deploying-react-apps-github-pages/
 //DOCS: https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson
