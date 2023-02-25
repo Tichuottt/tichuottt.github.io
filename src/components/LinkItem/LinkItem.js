@@ -69,7 +69,8 @@ const LinkItem = (props) => {
                     </Link> :
                     <a onMouseEnter={onMouseEnter}
                        onMouseLeave={onMouseLeave}
-                       className={`${classes.link} ${classes[name.toLowerCase()]}`} //Multiple classes for css
+                       // className={`${classes.link} ${classes[name.toLowerCase()]}`} //Multiple classes for css
+                       className={`${classes.link}`}
                        href={url}
                        target="_blank"
                        rel="noreferrer">

@@ -1,11 +1,11 @@
 import React, {useCallback, useRef} from "react";
-import SocialNetworkList from "../../components/NetworkList/SocialNetworkList";
-import WorkNetworkList from "../../components/NetworkList/WorkNetworkList";
-import particle from '../../assets/particles-style/among-us.json'
-import Particles from "react-particles";
 import {loadFull} from "tsparticles";
 import classes from './HelloWorld.module.css'
 import useEventListener from '@use-it/event-listener'
+import IntroHeader from "../../components/IntroHeader/IntroHeader";
+import Introduction from "../../components/Introduction/Introduction";
+import AboutMe from "../../components/AboutMe/AboutMe";
+import Contacts from "../../components/Contacts/Contacts";
 
 const HelloWorld = () => {
     let keyPressed = useRef('')
@@ -28,26 +28,28 @@ const HelloWorld = () => {
         if (keyPressed.current.includes('emnguoiyeu')) {
             window.open('https://www.instagram.com/huong.pham56/', '_blank')
             keyPressed.current = ''
-        }else if(keyPressed.current.includes('valentine')){
-            window.open('https://i.imgur.com/uXLoEAc.jpg', '_blank')
-            keyPressed.current = ''
         }
         console.log(keyPressed.current)
     }
 
     useEventListener('keydown', handler);
 
-
+    //https://99designs.com/profiles/arkline/designs/1939681
     return (
         <div className={classes.helloworld}>
-            <SocialNetworkList/>
-            <WorkNetworkList/>
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                loaded={particlesLoaded}
-                options={particle}
-            />
+            <IntroHeader/>
+            <Introduction/>
+            <AboutMe/>
+            <Contacts/>
+
+            {/*<SocialNetworkList/>*/}
+            {/*<WorkNetworkList/>*/}
+            {/*<Particles*/}
+            {/*    id="tsparticles"*/}
+            {/*    init={particlesInit}*/}
+            {/*    loaded={particlesLoaded}*/}
+            {/*    options={particle}*/}
+            {/*/>*/}
         </div>
     )
 }

@@ -3,6 +3,7 @@ import {Navigate, Route, Routes} from 'react-router-dom'
 import HelloWorld from "./pages/HelloWorld/HelloWorld";
 import Resume from "./pages/Resume/Resume";
 import Birthday from "./pages/Birthday/Birthday";
+import classes from "./App.module.css";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
 
 
     return (
-        <main>
+        <div className={classes.App}>
             <Routes>
                 <Route
                     path="*"
@@ -28,7 +29,7 @@ function App() {
                 <Route path="/resume" element={<Resume/>}/>
                 <Route path="/bd" element={<Birthday/>}/>
             </Routes>
-        </main>
+        </div>
     );
 }
 

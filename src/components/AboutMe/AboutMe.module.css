@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    padding: 0 0rem 0 0;
+    margin-bottom: 0;
+    /*background-color: #61dafb;*/
+}
+
+.container img {
+    width: 30vw;
+    flex: 1;
+}
+
+.container h1 {
+    white-space: pre-wrap;
+    text-align: right;
+    font-family: var(--font-family);
+    font-size: 4vw;
+    margin: 4vh 3.5vw 0 0;
+    font-weight: bolder;
+    flex: 1;
+    padding-top: 0;
+}
+
+.aboutme {
+    flex-direction: column;
+    margin: 4vh 3.5vw 4vh 3.5vw;
+    flex: 2;
+    display: block;
+}
+
+.aboutme h2 {
+    font-family: var(--font-family);
+    color: #282c34;
+    font-weight: bold;
+    font-size: 1.3vw;
+    margin-bottom: 4vh;
+    text-align: left;
+}
+
+.aboutme h3 {
+    font-family: var(--font-family);
+    color: #282c34;
+    font-weight: lighter;
+    font-size: 1.1vw;
+    text-align: left;
+}
+
+
+@media (max-width: 580px) {
+    .aboutme {
+        margin: 2vh 2.5vw 2.5vh 2.5vw;
+    }
+
+    .container h1 {
+        margin: 2vh 3.5vw 0 0;
+    }
+}

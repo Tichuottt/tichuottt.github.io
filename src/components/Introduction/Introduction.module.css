@@ -1,0 +1,87 @@
+
+.introduction {
+    display: flex;
+    background-color: #282c34;
+    flex-direction: column;
+    padding: 0 6rem;
+    margin-bottom: 0;
+}
+
+.introduction h1 {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: lighter;
+    white-space: pre-wrap;
+}
+
+
+.topIntro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomIntro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 15vh 0 3rem 0
+}
+
+.bottomIntro h1 {
+    text-align: right;
+    font-weight: bold;
+    font-size: 3.5vw;
+}
+
+.bottomIntro h4 {
+    color: #fff;
+    white-space: pre-wrap;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 2vw;
+}
+
+.nameIntro {
+    display: flex;
+    flex-direction: row;
+}
+
+.nameIntro h1 {
+    margin: 0.2rem 0;
+    font-size: 3vw;
+}
+
+
+.whiteColumn {
+    background-color: #f9f9fb;
+    padding: 3rem 0.3rem 0 0.3rem;
+}
+
+.whiteColumn h1 {
+    color: #282c34;
+    text-align: center;
+}
+
+.nameColumn {
+    padding: 3rem 0.1rem 0 0.1rem;
+}
+
+.navagationColumn {
+    margin: 3rem 0 0 0;
+}
+
+.navagationColumn h3 {
+    color: #d7d3d3;
+    font-family: var(--font-family);
+    font-weight: lighter;
+    text-align: right;
+    font-size: 2vw;
+    margin: 0.5rem 0;
+}
+
+
+@media (max-width: 580px) {
+    .introduction {
+        padding: 0 4em;
+    }
+}

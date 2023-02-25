@@ -31,6 +31,11 @@ main {
 
 }
 
+:root {
+    --font-family: Helvetica, serif;
+}
+
+
 /*h1,*/
 /*h2,*/
 /*h3,*/
