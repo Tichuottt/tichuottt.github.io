@@ -33,10 +33,6 @@
     position: absolute;
     right: 1rem;
     align-self: center;
-    /*left: 30px;*/
-    /*margin: 0 0 0 0.5rem;*/
-    /*top: 20%;*/
-    /*background-color: transparent;*/
 }
 
 .link img:hover {
@@ -46,7 +42,7 @@
 /*SIZE FOR SMALL DEVICES*/
 @media (max-width: 580px) {
     .link {
-        width: 45vw;
+        width: 40vw;
     }
 }
 

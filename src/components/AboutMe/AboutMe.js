@@ -5,7 +5,7 @@ const AboutMe = (props) => {
 
 
     return (
-        <div className={classes.container}>
+        <div ref={props?.aboutMeRef} className={classes.container}>
 
             <img
                 src={'https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=cover&w=2070&q=80'}

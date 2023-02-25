@@ -33,15 +33,15 @@ import styled from "styled-components";
 
 const QRImage = styled.img`
    display: block;
-   width: ${props => props?.display ? '23vw' : '0px'}; 
-   margin: auto auto ${props => props?.display ? '1rem' : '0'};   
+   width: ${props => props?.isShow ? '23vw' : '0px'}; 
+   margin: auto auto ${props => props?.isShow ? '1rem' : '0'};   
    transition: all 0.4s ease-out;
    border-radius: 12px;
    object-fit: cover;
-   opacity: ${props => props?.display ? '1' : '0'};    
+   opacity: ${props => props?.isShow ? '1' : '0'};    
    
    @media (max-width: 550px) {
-     width: ${props => props?.display ? '40vw' : '0px'};;
+     width: ${props => props?.isShow ? '40vw' : '0px'};;
    }
 `
 
@@ -85,7 +85,7 @@ const LinkItem = (props) => {
             {
                 qrUrl ?
                     <QRImage
-                        display={isShowQR}
+                        isShow={isShowQR}
                         src={qrUrl}
                         alt="qrcode"
                     />

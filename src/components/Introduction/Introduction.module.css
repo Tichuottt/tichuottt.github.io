@@ -75,13 +75,37 @@
     font-family: var(--font-family);
     font-weight: lighter;
     text-align: right;
-    font-size: 2vw;
-    margin: 0.5rem 0;
+    font-size: 1.5vw;
+    margin: 0.4rem 0;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+.navagationColumn h3:hover {
+    transition: all 0.2s ease-in;
+    color: #d7d3d3;
+    border-bottom: 1px solid #d7d3d3;
 }
 
 
 @media (max-width: 580px) {
     .introduction {
         padding: 0 4em;
+    }
+
+    .nameIntro h1 {
+        font-size: 5vw;
+    }
+
+    .navagationColumn h3 {
+        font-size: 3vw;
+    }
+
+    .bottomIntro h1 {
+        font-size: 5vw;
+    }
+
+    .bottomIntro h4 {
+        font-size: 2.5vw;
     }
 }

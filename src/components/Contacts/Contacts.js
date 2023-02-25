@@ -4,12 +4,12 @@ import WorkNetworkList from "../NetworkList/WorkNetworkList";
 
 const Contacts = (props) => {
     return (
-        <div className={classes.contacts}>
+        <div ref={props?.contactsRef} className={classes.contacts}>
             <h1>{'Contacts'}</h1>
 
             <div className={classes.contactsContainer}>
-            <SocialNetworkList/>
-            <WorkNetworkList/>
+                <SocialNetworkList/>
+                <WorkNetworkList/>
             </div>
         </div>
 

@@ -1,4 +1,10 @@
-.helloworld{
-    padding: 0 3rem;
+.helloworld {
+    padding: 0 2.5rem;
 }
 
+
+@media (max-width: 580px) {
+    .helloworld {
+        padding: 0;
+    }
+}

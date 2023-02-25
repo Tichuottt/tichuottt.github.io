@@ -25,7 +25,7 @@
     "deploynet": "npm run build && sudo netlify deploy --prod",
     "deploygit": "npm run build && gh-pages -d build",
     "deploy": "npm run build && firebase deploy",
-    "preview": "firebase hosting:channel:deploy preview_react"
+    "preview": "firebase hosting:channel:deploy preview_react2"
   },
   "eslintConfig": {
     "extends": [

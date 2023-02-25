@@ -1,6 +1,11 @@
 import classes from './Introduction.module.css'
 
 const Introduction = (props) => {
+
+    const scrollToSection = (ref) => () => {
+        ref?.current.scrollIntoView({behavior: 'smooth'})
+    }
+
     return (
         <div className={classes.introduction}>
             <div className={classes.topIntro}>
@@ -19,11 +24,9 @@ const Introduction = (props) => {
                     </div>
                 </div>
 
-
                 <div className={classes.navagationColumn}>
-                    <h3>About me</h3>
-                    <h3>Contacts</h3>
-                    <h3>Project</h3>
+                    <h3 onClick={scrollToSection(props?.aboutMeRef)}>About me</h3>
+                    <h3 onClick={scrollToSection(props?.contactsRef)}>Contacts</h3>
                 </div>
             </div>
 
@@ -33,7 +36,7 @@ const Introduction = (props) => {
                 </h4>
 
                 <h1>
-                    {'A new breath for\nyour cooperate\nservice'}
+                    {'Building tomorrow\'s\nworld with code\n today.'}
                 </h1>
             </div>
 

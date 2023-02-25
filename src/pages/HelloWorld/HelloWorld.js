@@ -9,6 +9,8 @@ import Contacts from "../../components/Contacts/Contacts";
 
 const HelloWorld = () => {
     let keyPressed = useRef('')
+    const aboutMeRef = useRef(null);
+    const contactsRef = useRef(null);
 
     const particlesInit = useCallback(async engine => {
         console.log('engine', engine);
@@ -38,9 +40,9 @@ const HelloWorld = () => {
     return (
         <div className={classes.helloworld}>
             <IntroHeader/>
-            <Introduction/>
-            <AboutMe/>
-            <Contacts/>
+            <Introduction aboutMeRef={aboutMeRef} contactsRef={contactsRef}/>
+            <AboutMe aboutMeRef={aboutMeRef}/>
+            <Contacts contactsRef={contactsRef}/>
 
             {/*<SocialNetworkList/>*/}
             {/*<WorkNetworkList/>*/}

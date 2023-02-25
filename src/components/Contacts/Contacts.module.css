@@ -21,11 +21,12 @@
 
 .contactsContainer {
     display: block;
-    flex:2;
+    flex: 2;
     margin-top: 6vh;
 }
 
 @media (max-width: 580px) {
-
-
+    .contacts h1 {
+        font-size: 6vw;
+    }
 }
