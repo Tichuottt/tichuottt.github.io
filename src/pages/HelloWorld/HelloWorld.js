@@ -6,6 +6,7 @@ import IntroHeader from "../../components/IntroHeader/IntroHeader";
 import Introduction from "../../components/Introduction/Introduction";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Contacts from "../../components/Contacts/Contacts";
+import BackToTop from "../../components/BackToTop";
 
 const HelloWorld = () => {
     let keyPressed = useRef('')
@@ -36,6 +37,8 @@ const HelloWorld = () => {
 
     useEventListener('keydown', handler);
 
+
+
     //https://99designs.com/profiles/arkline/designs/1939681
     return (
         <div className={classes.helloworld}>
@@ -44,8 +47,11 @@ const HelloWorld = () => {
             <AboutMe aboutMeRef={aboutMeRef}/>
             <Contacts contactsRef={contactsRef}/>
 
-            {/*<SocialNetworkList/>*/}
-            {/*<WorkNetworkList/>*/}
+            <BackToTop/>
+
+            {/*window.scrollTo({ top: 0, behavior: 'smooth' });*/}
+
+
             {/*<Particles*/}
             {/*    id="tsparticles"*/}
             {/*    init={particlesInit}*/}

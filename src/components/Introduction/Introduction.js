@@ -1,4 +1,6 @@
 import classes from './Introduction.module.css'
+import TypingText from "../TypingText";
+import FadeIn from "../FadeIn";
 
 const Introduction = (props) => {
 
@@ -17,11 +19,13 @@ const Introduction = (props) => {
                         <h1>L</h1>
                     </div>
 
+
                     <div className={classes.nameColumn}>
-                        <h1>ua</h1>
-                        <h1>at</h1>
-                        <h1>uong</h1>
+                        <FadeIn><h1>ua</h1></FadeIn>
+                        <FadeIn speed={1.5}><h1>at</h1></FadeIn>
+                        <FadeIn speed={2}><h1>uong</h1></FadeIn>
                     </div>
+
                 </div>
 
                 <div className={classes.navagationColumn}>
@@ -31,13 +35,14 @@ const Introduction = (props) => {
             </div>
 
             <div className={classes.bottomIntro}>
-                <h4>
+                <h4 onClick={scrollToSection(props?.aboutMeRef)}>
                     {'Scroll down\nto explore'}
                 </h4>
 
                 <h1>
-                    {'Building tomorrow\'s\nworld with code\n today.'}
+                    {TypingText('Building tomorrow\'s\nworld with code\n today.', 25)}
                 </h1>
+
             </div>
 
 

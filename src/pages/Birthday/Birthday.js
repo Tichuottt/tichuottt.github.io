@@ -4,6 +4,7 @@ import {loadFull} from "tsparticles";
 import Particles from "react-particles";
 import AddWish from "../../components/Birthday/AddWish";
 import {FIREBASE_URL} from "../../utils/Const";
+import {Helmet} from "react-helmet";
 
 const countDownDate = new Date("Jun 05, 2023 00:00:00").getTime();
 // https://particles.js.org/docs/classes/Options_Classes_Particles_Shape_Shape.Shape.html#image
@@ -100,6 +101,11 @@ const Birthday = () => {
 
     return (
         <div className={classes.container}>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Birthday</title>
+                <meta name='description' content='Hua Cat Luong React JS projects'/>
+            </Helmet>
             <h1>Happy Birthday!</h1>
             {isShowWhenBd()}
             {isShowWhenCountDown()}

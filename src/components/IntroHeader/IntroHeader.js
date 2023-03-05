@@ -1,4 +1,5 @@
 import classes from './IntroHeader.module.css'
+import FadeIn from "../FadeIn";
 
 const IntroHeader = (props) => {
 
@@ -10,7 +11,7 @@ const IntroHeader = (props) => {
                 <h2>Software Engineer</h2>
             </div>
 
-            <h1>{'Techno\nlogies'}</h1>
+            <FadeIn><h1>{'Techno\nlogies'}</h1></FadeIn>
         </div>
 
     )

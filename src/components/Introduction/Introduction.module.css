@@ -38,6 +38,7 @@
     text-align: left;
     font-weight: lighter;
     font-size: 1.5vw;
+    cursor: pointer;
 }
 
 .nameIntro {
